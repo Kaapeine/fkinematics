@@ -5,5 +5,5 @@ After seeing how tedious it is to deduce the forward kinematics expressions for 
 
 The program outputs a 4x4 transform matrix between the base frame {0} and the last frame {N} (wrist frame). There is also a snippet of code that is commented out which can provide the transform between any two axes, provided the entire D-H table is known. 
 
-USAGE:
+### Usage:
 Just provide inputs as it asks. For link length, link offset and joint angle, type '0' in your input vector if these quantities are zero. If they are variable, any input will do.  
