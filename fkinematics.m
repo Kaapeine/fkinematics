@@ -13,9 +13,7 @@ theta = sym('theta', [1 I]);
 d = sym('d', [1 I]);
 a = sym('a', [1 I]);
 
-% Calling the function which outputs the expression for the transform from
-% the {0} frame to the {I}th frame
-exp = symexp(dh, theta, d, a, I);
+
 
 % Assigning the values to the symbolic variables
 for j = 1:I
@@ -33,7 +31,9 @@ for j = 1:I
     end
 end
 
-exp
+% Calling the function which outputs the expression for the transform from
+% the {0} frame to the {I}th frame
+exp = symexp(dh, theta, d, a, I);
 
 % If all the values in the table are known, then use the following code to
 % obtain the transforms you want
